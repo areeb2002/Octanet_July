@@ -1,0 +1,92 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin:0px;
+    padding:0px;
+    background : url(/3434349.jpg);
+    background-position: top;
+    background-size: 1200px;
+}
+.left{
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 34px;
+    top: 20px;
+}
+.mid{
+    display: block;
+    width: 50%;
+    right: 20px;
+    margin: 20px auto;
+    /* border: 2px solid blue; */
+}
+.right{
+    position: absolute;
+    right:34px;
+    top: 20px;           
+    display: inline-block;
+    /* border: 2px solid yellow; */
+}
+.navbar{
+    display: inline-block;
+    padding:1.5rem;
+    /* border: 2px solid blue; */
+    text-align: center;
+    transform: translate(0,-12%);
+}
+.navbar li{
+    display: inline-block;
+    font-size: 28px;
+    text-decoration: none;
+}
+.navbar li a{
+    color: #6fff4f;
+    text-decoration: none;
+    padding: 30px 20px;
+    outline: none;
+}
+.navbar li a:hover, .navbar li a.active{
+    color: 	#59c325;
+}
+.left img{
+    width: 200px;
+}
+.left div{
+    text-align:  center;
+}
+.btn{
+    margin: 29px 9px;
+    background-color: rgb(15, 38, 86);
+    color: white;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: grey;
+}
+.container{
+    border : 2px solid green;
+    margin : 35px 34px;
+    padding: 9px 115px;
+    width: 50%;
+    border-radius:20px ;
+    transform: translate(-150%,10%);
+    transition: transform 0.3s ease-in-out;
+    animation: container 1s forwards ease-in-out;
+}
+@keyframes container {
+    100%{
+        transform: translate(0%,10%);
+    }
+}
+.container h2{
+    font-size: 40px;
+    color: rgb(205, 109, 12);
+}
+.container p{
+    font-size: 20px;
+    color: #fff;
+}

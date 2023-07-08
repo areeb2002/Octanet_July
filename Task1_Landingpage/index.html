@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highrise Builders</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+    <!-- css reset -->
+    <style>
+        body{
+            font-family: 'Oswald', sans-serif;
+            color: white;
+            margin:0px;
+            padding:0px;
+            background : url(/3434349.jpg);
+            background-position: top;
+            background-size: 1200px;
+        }
+        .left{
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 34px;
+            top: 20px;
+        }
+        .mid{
+            display: block;
+            width: 50%;
+            right: 20px;
+            margin: 20px auto;
+            /* border: 2px solid blue; */
+        }
+        .right{
+            position: absolute;
+            right:34px;
+            top: 20px;           
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+        .navbar{
+            display: inline-block;
+            padding:1.5rem;
+            /* border: 2px solid blue; */
+            text-align: center;
+            transform: translate(0,-12%);
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 28px;
+            text-decoration: none;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 30px 20px;
+            outline: none;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            color: 	rgb(0, 0, 0);
+            text-decoration: underline;
+        }
+        .left img{
+            width: 200px;
+        }
+        .left div{
+            font-size: 20px;
+            text-align:  center;
+        }
+        .left div:hover{
+            background-color: black;
+        }
+        .btn{
+            margin: 29px 9px;
+            background-color: rgb(15, 38, 86);
+            color: white;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: grey;
+        }
+        .container{
+            /* background-color: aquamarine; */
+            border : 5px solid black;
+            margin : -40px 34px;
+            padding: 0px 117px;
+            width: 50%;
+            border-radius:20px ;
+            transform: translate(-150%,10%);
+            transition: transform 0.3s ease-in-out;
+            animation: container 1s forwards ease-in-out;
+        }
+        @keyframes container {
+            100%{
+                transform: translate(0%,10%);
+            }
+        }
+        .container h2{
+            font-size: 40px;
+            color: rgb(0, 0, 0);}
+        .container p{
+            font-size: 20px;
+            color:#0db7e6f2;
+        }
+        .container:hover{
+            background-color: rgb(5, 38, 102)
+        }
+        /* .end{
+            font-size: 20px;
+            text-align: center;
+            color: blue;
+        } */
+        #footer{
+    text-align: center;
+    font-size: 0.5rem;
+    padding: 0.4rem;
+    font-weight: 10;
+    color: #fff;
+    background:rgb(65, 65, 65);
+    transform: translateY(200%);
+}
+#footer .social-links a{
+    margin: 0.5rem;
+}
+#footer p{
+    font-size: 0.8rem;
+}
+
+    </style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="a7da641ffb3c11df19444d01b7fd5067.jpg" alt="">
+            <div>
+                Highrise Construction
+            </div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="our_projects.html">Our Projects</a></li>
+                <li><a href="#" >Contact Us</a></li>
+            </ul>
+
+        </div>
+        
+        <!-- right box for actions -->
+        <div class="right">
+          <button class="btn">visit our project</button>
+          <button class="btn">Book your House</button>
+        </div>
+    </header>
+    <div class="container">
+    <h2>Biggest Contruction Company of Central India</h2>
+    <p>Welcome to Highrise Constructions, the biggest construction firm in Central India. With our unwavering commitment to excellence and expertise in the field, we have established ourselves as a trusted name in the construction industry</p>
+    <p>At Highrise Constructions, we specialize in a wide range of construction works, including building construction, flyovers, bridges, and much more. Our skilled team of professionals, coupled with advanced technology and equipment, enables us to undertake and successfully complete projects of varying complexities and scales.</p>
+    </div>
+    <footer id="footer">
+        <div class="social-links">
+            <a href="#" class="contact-link" title="Linkedin">
+                <i class="fa-brands fa-linkedin fa-4x"></i>
+            </a>
+             <a href="#" class="contact-link" title="Instagram">
+                <i class="fa-brands fa-instagram fa-4x"></i>
+             </a>
+          <a href="#" class="contact-link" title="Github">
+            <i class="fa-brands fa-github fa-4x"></i>
+        </a>  
+            
+        </div>
+        <p>Highrise Constructions &copy; 2023, All Rights Reversed</p>
+      </footer>
+</body>
+</html>
